@@ -1,0 +1,332 @@
+/* Style pour la page d'administration */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif; /* Police */
+    font-size: 28px; /* Taille de la police */
+    color: #2c3e50; /* Couleur du texte */
+    text-align: center; /* Alignement du texte */
+    margin: 30px 0; /* Espacement autour du titre */
+    padding: 10px; /* Espacement interne */
+    border-bottom: 3px solid #3498db; /* Bordure en dessous du titre */
+    background: linear-gradient(to right, #f4f4f4, #e0e0e0); /* Dégradé de fond */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    text-transform: uppercase; /* Met le texte en majuscules */
+}
+
+h3 {
+    font-size: 1.5rem; /* Taille de la police */
+    font-weight: 600; /* Poids de la police pour un effet semi-gras */
+    color: #495057; /* Couleur du texte légèrement plus clair que pour le <h1> */
+    text-align: left; /* Alignement du texte à gauche */
+    margin-top: 1.5rem; /* Marge en haut */
+    margin-bottom: 1rem; /* Marge en bas */
+    padding-bottom: 0.5rem; /* Espacement en bas */
+    border-bottom: 2px solid #007bff; /* Bordure inférieure colorée */
+    background-color: #f8f9fa; /* Couleur de fond subtile pour le titre */
+    border-radius: 0.25rem; /* Coins arrondis */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #343a40;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+ /* Ajout de styles pour masquer le formulaire */
+ #add-admin-form.hidden {
+    display: none;
+}
+
+/* Styles pour le tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+table th {
+    background-color: #343a40;
+}
+table tr:hover {
+    background-color: #f1f1f1;
+}
+.message {
+    color: green;
+    font-weight: bold;
+}
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+#toggle-admin-form {
+    background-color: green; /* Couleur de fond bleue */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprimer la bordure par défaut */
+    padding: 10px 20px; /* Espacement intérieur : 10px en haut/bas, 20px à gauche/droite */
+    font-size: 16px; /* Taille de la police */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointeur */
+    transition: background-color 0.3s, transform 0.3s; /* Transition douce pour la couleur et l'effet de transformation */
+    margin: 10px 0; /* Espacement extérieur : 10px en haut/bas */
+}
+
+#toggle-admin-form:hover {
+    background-color: rgb(28, 97, 28); /* Couleur de fond bleue plus foncée au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+#toggle-admin-form:active {
+    background-color: green; /* Couleur de fond bleue encore plus foncée lors du clic */
+    transform: scale(0.95); /* Réduction de la taille au clic */
+}
+
+/* Style de base pour tous les liens avec la classe "actions" */
+.actions {
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    padding: 3px 7px; /* Espacement intérieur : 8px en haut/bas, 12px à gauche/droite */
+    border-radius: 4px; /* Coins légèrement arrondis */
+    font-size: 14px; /* Taille de la police */
+    font-weight: bold; /* Texte en gras */
+    display: inline-block; /* Permet d'ajuster la taille du lien comme un bloc en ligne */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Transition douce pour les effets */
+}
+
+/* Style spécifique pour les liens avec la classe "modify" */
+.modify {
+    background-color: #28a745; /* Couleur de fond verte */
+    color: white; /* Couleur du texte */
+}
+
+.modify:hover {
+    background-color: #218838; /* Couleur de fond verte plus foncée au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+.modify:active {
+    background-color: #1e7e34; /* Couleur de fond verte encore plus foncée lors du clic */
+    transform: scale(0.95); /* Réduction de la taille au clic */
+}
+
+/* Style spécifique pour les liens avec la classe "delete" */
+.delete {
+    background-color: #dc3545; /* Couleur de fond rouge */
+    color: white; /* Couleur du texte */
+}
+
+.delete:hover {
+    background-color: #c82333; /* Couleur de fond rouge plus foncée au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+.delete:active {
+    background-color: #bd2130; /* Couleur de fond rouge encore plus foncée lors du clic */
+    transform: scale(0.95); /* Réduction de la taille au clic */
+}
+
+
+/* Style du footer */
+footer {
+    background-color: #282828;
+    color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+}
+
+.footer-left h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #f1f1f1;
+}
+
+.footer-left p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-middle ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-middle ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-middle ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-middle ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-right p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-right .social-icon {
+    display: inline-block;
+    margin: 0 5px;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-right .social-icon:hover {
+    text-decoration: underline;
+}
+
+#timerDisplay {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+#timer {
+    color: black; /* Couleur par défaut */
+}
+#timer.urgent {
+    color: red; /* Couleur lorsque le temps est critique */
+}

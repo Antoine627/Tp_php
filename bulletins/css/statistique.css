@@ -1,0 +1,101 @@
+/* Conteneur principal pour les boutons */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+.btn-container {
+    display: flex;
+    justify-content: space-around; /* Espacement entre les boutons */
+    flex-wrap: wrap; /* Pour que les boutons aillent sur la ligne suivante s'il n'y a pas assez de place */
+    gap: 10px; /* Espace entre les boutons */
+    padding: 20px;
+}
+
+/* Stylisation des boutons, si besoin */
+.btn-stylized {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 28px 38px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0; /* Marges verticales */
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-stylized:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.btn-stylized:active {
+    background-color: #1c6ea4;
+    transform: translateY(0);
+}
+
+/* Conteneur pour le titre personnalisé */
+.custom-title {
+    text-align: center; /* Centrer le texte */
+    margin-top: 20px; /* Espacement au-dessus du titre */
+}
+
+.custom-title h2 {
+    font-size: 24px; /* Taille du texte du titre */
+    font-weight: bold; /* Texte en gras */
+    color: #2c3e50; /* Couleur du texte */
+    margin: 0; /* Retirer les marges par défaut */
+}
+
+/* Conteneur pour le bouton de retour */
+.btn-return {
+    text-align: center; /* Centrer le bouton */
+    margin-top: 20px; /* Espacement au-dessus du bouton */
+}
+
+/* Stylisation du bouton de retour (utilise la même classe que les autres boutons) */
+.btn-stylized2 {
+    background-color: #e74c3c; /* Couleur de fond spécifique pour le bouton de retour */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0; /* Marges verticales */
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-stylized2:hover {
+    background-color: #c0392b; /* Changement de couleur au survol */
+    transform: translateY(-2px); /* Légère élévation au survol */
+}
+
+.btn-stylized2:active {
+    background-color: #a93226; /* Couleur lors du clic */
+    transform: translateY(0); /* Retour à la position normale lors du clic */
+}

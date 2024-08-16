@@ -1,0 +1,101 @@
+/* Conteneur principal */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Style pour le titre du formulaire */
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Style pour les messages d'erreur */
+.error {
+    color: #d9534f;
+    margin-bottom: 20px;
+    font-size: 14px;
+    background-color: #f8d7da; /* Couleur de fond rouge clair */
+    color: #721c24; /* Couleur du texte rouge foncé */
+    border: 1px solid #f5c6cb; /* Bordure rouge */
+}
+
+/* Style général pour les labels */
+.container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Style pour les champs de formulaire */
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="date"],
+.container input[type="password"], /* Ajout du style pour les champs de mot de passe */
+.container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+/* Style pour le bouton de soumission */
+.container input[type="submit"] {
+    background-color: #5bc0de;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #31b0d5;
+}
+
+#retour {
+    position: relative;
+    background-color: #d9534f;
+    left: 350px;
+    bottom: 45px;
+    width: 250px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Style général pour les messages */
+.message {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+/* Style pour le message de succès */
+.success {
+    background-color: #d4edda; /* Couleur de fond verte claire */
+    color: #155724; /* Couleur du texte verte foncée */
+    border: 1px solid #c3e6cb; /* Bordure verte */
+}
